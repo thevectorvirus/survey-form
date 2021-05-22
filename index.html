@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header class="main-header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="age">Age <span>(optional)</span></label>
+                <input type="number" name="age" id="age" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <label for="dropdown-selector-role">Which option best describes your current role?</label>
+                <select name="dropdown-selector-role" id="dropdown-selector-role">
+                    <option value="">Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="job">Full time job</option>
+                    <option value="job">Full time learner</option>
+                    <option value="job">Prefer not to say</option>
+                    <option value="job">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="radio-selector">Would you recommend freeCodeCamp to a friend?</label>
+                    <input type="radio" name="radio-selector" id="definitely" checked>Definitely <br>
+                    <input type="radio" name="radio-selector" id="maybe">Maybe <br>
+                    <input type="radio" name="radio-selector" id="not-sure">Note Sure <br>
+            </div>
+            <div class="form-group">
+                <label for="favorite-selector">What is your favorite feature of freeCodeCamp?</label>
+                <select name="favorite-selector" id="favorite-selector">
+                    <option value="">Select an option</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Projeccts">Projects</option>
+                    <option value="Community">Community</option>
+                    <option value="Open Source">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="improve-selector">What would you like to see improved?<span>(Check all that apply)<span><label>
+                <input type="checkbox" checked> Front-end Projects <br>
+                <input type="checkbox"> Back-end Projects <br>
+                <input type="checkbox"> Data Visualization <br>
+                <input type="checkbox"> Challenges <br>
+                <input type="checkbox"> Open Source Community <br>
+                <input type="checkbox"> Gitter help rooms <br>
+                <input type="checkbox"> Videos <br>
+                <input type="checkbox"> City Meetups <br>
+                <input type="checkbox"> Wiki <br>
+                <input type="checkbox"> Forum <br>
+                <input type="checkbox"> Additional Courses <br>
+            </div>
+            <div class="form-group">
+                <label for="comments">Any comments or suggestions?<label>
+                <textarea name="comments" id="comments" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <button type="submit" value="submit" id="btn-submit">Submit</button>
+        </form>
+        <p class="creator">This form is created by: <a href="https://github.com/thevectorvirus" target="_blank">Vineet Kumar Singh</a></p>
+    </div>
+</body>
+</html>
